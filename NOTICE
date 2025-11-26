@@ -1,0 +1,24 @@
+Chinese Engineers Relational Database (CERD) Shiny Dashboard
+© 2025 Thorben Pelzer
+
+This project incorporates and visualizes data from:
+
+Pelzer, Thorben. *Chinese Engineers Relational Database*, version 1.8.0 (2025).
+Zenodo. [https://doi.org/10.5281/zenodo.4075601](https://doi.org/10.5281/zenodo.4075601)
+
+Citation of the CERD dataset is required when using this dashboard, its data outputs, or derivative works.
+Recommended citation:
+
+Pelzer, T. (2025). *Chinese Engineers Relational Database* (1.8.0). Zenodo. [https://doi.org/10.5281/zenodo.4075601](https://doi.org/10.5281/zenodo.4075601)
+
+
+
+Further credit:
+
+- "mcbd_cerd_linking.csv uses work conducted in collaboration with Nora van den Bosch and the ENP-China project.
+
+- "china_1928.geojson" uses work released by Christian Henriot under the CC 0 license.
+
+- "world_1938.geojson" is released under GNU GPL 3 by André Ourednik's work at the historical-basemaps repository.
+
+- "taiwan_1946.geojson" is released by the Ministry of the Interior.

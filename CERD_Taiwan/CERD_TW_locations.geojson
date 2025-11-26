@@ -1,0 +1,24 @@
+{
+"type": "FeatureCollection",
+"name": "CERD_TW_locations",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "place_name": "Changhua 彰化", "province": "Changhua", "country": "Taiwan", "location_id": 88600001.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.5623185, 24.07435143 ] } },
+{ "type": "Feature", "properties": { "place_name": "Chiayi 嘉義", "province": "Chiayi", "country": "Taiwan", "location_id": 88600004.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.449344, 23.48097731 ] } },
+{ "type": "Feature", "properties": { "place_name": "Hsinchu 新竹", "province": "Hsinchu", "country": "Taiwan", "location_id": 88600006.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.9676457, 24.8131551 ] } },
+{ "type": "Feature", "properties": { "place_name": "Hualien 花蓮", "province": "Hualien", "country": "Taiwan", "location_id": 88600009.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 121.6087885, 23.99118061 ] } },
+{ "type": "Feature", "properties": { "place_name": "Kaohsiung 高雄", "province": "Kaohsiung", "country": "Taiwan", "location_id": 88600010.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.2950576, 22.62633624 ] } },
+{ "type": "Feature", "properties": { "place_name": "Keelung 雞籠", "province": "Keelung", "country": "Taiwan", "location_id": 88600011.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 121.7392509, 25.12713285 ] } },
+{ "type": "Feature", "properties": { "place_name": "Miaoli 苗栗", "province": "Hsinchu", "country": "Taiwan", "location_id": 88600007.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.8194684, 24.5633757 ] } },
+{ "type": "Feature", "properties": { "place_name": "Nantou 南投", "province": "Changhua", "country": "Taiwan", "location_id": 88600002.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.6775473, 23.91987596 ] } },
+{ "type": "Feature", "properties": { "place_name": "Pingtung 屏東", "province": "Pingtung", "country": "Taiwan", "location_id": 88600012.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.4898161, 22.67028225 ] } },
+{ "type": "Feature", "properties": { "place_name": "Taichung 臺中", "province": "Changhua", "country": "Taiwan", "location_id": 88600003.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.6697398, 24.16923508 ] } },
+{ "type": "Feature", "properties": { "place_name": "Tainan 臺南", "province": "Tainan", "country": "Taiwan", "location_id": 88600013.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.2253693, 23.00009142 ] } },
+{ "type": "Feature", "properties": { "place_name": "Taipei 臺北", "province": "Taipei", "country": "Taiwan", "location_id": 88600014.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 121.5610135, 25.03429524 ] } },
+{ "type": "Feature", "properties": { "place_name": "Taoyuan 桃園", "province": "Hsinchu", "country": "Taiwan", "location_id": 88600008.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 121.3034323, 24.99337469 ] } },
+{ "type": "Feature", "properties": { "place_name": "Thailand", "province": null, "country": null, "location_id": 88600017.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 100.5135929, 13.77373681 ] } },
+{ "type": "Feature", "properties": { "place_name": "Yilan 宜蘭", "province": "Yilan", "country": "Taiwan", "location_id": 88600016.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 121.7657315, 24.75693451 ] } },
+{ "type": "Feature", "properties": { "place_name": "Yunlin 雲林", "province": "Chiayi", "country": "Taiwan", "location_id": 88600005.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 120.425913, 23.71484402 ] } },
+{ "type": "Feature", "properties": { "place_name": "Beitou 北投", "province": "Yilan", "country": "Taiwan", "location_id": 88600015.0, "place_type": null }, "geometry": { "type": "Point", "coordinates": [ 121.5145098, 25.11460154 ] } }
+]
+}
