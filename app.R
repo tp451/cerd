@@ -883,7 +883,9 @@ tabPanel("Publications",
 fluidRow(
   column(12, div(class = "dynamic-height scrollable-content",
   wellPanel(tags$small(HTML(paste0(
-    "<p><h4>Publications</h4></p>
+    
+    "
+    <p><h4>Publications</h4></p>
                                          <p>
                                          <a href=\"https://doi.org/10.1080/18752160.2025.2546742\" target=\"_blank\"><img height=200px src=\"pub_societies.jpg\" alt=\"Publication cover\"></a>
                                          <a href=\"https://doi.org/10.1515/9783111374437-004\" target=\"_blank\"><img height=200px src=\"pub_flux.jpg\" alt=\"Publication cover\"></a>
@@ -894,6 +896,7 @@ fluidRow(
                                          </p>
                                          <p><b>Discussing the database</b>
                                          <ul>
+                                         <li>\"[...] a groundbreaking example of applying modern social sciences methodologies to Chinese history.\" —Ben Kletzer, <i>Journal of Chinese History</i>, 2025.</li>
                                          <li>Ren, Bamboo Yunzhu. <i>Professional Education and Employment in China: Health and Engineering, 1905–1952</i>. Diss. Hong Kong University of Science and Technology (Hong Kong), 2025.</li>
                                          <li>Pelzer, Thorben. <i>Chinese Engineers Relational Database (CERD) Design Manual</i>. Leipziger Universitätsverlag, 2020.</li>
                                          </ul></p>
