@@ -1933,26 +1933,24 @@ server <- function(input, output, session) {
     
     # get clicked person row safely
     clicked_node <- table_data[input$dataTablePerson_rows_selected, ]
-    
-    if (nrow(clicked_node) == 0) return(NULL)
-    
-    aka_names <- filtered_persons() %>%
-    filter(person_id %in% clicked_node$person_id & is.na(familyname_postal)==F & is.na(givenname_postal)==F) %>%
-    # Combine postal names
-    transmute(names_alt = paste(familyname_postal, givenname_postal)) %>%
-    # Bind with existing names_alt column
-    select(names_alt) %>%
-    rbind(
-      filtered_persons() %>%
-      filter(person_id %in% clicked_node$person_id & is.na(names_alt) == F) %>%
-      select(names_alt)
-    ) %>%
-    drop_na() %>%
-    unique()
-    
-    # Degrees for clicked person
+
+    # Profile for clicked person
     
     if (!is.null(clicked_node) && nrow(clicked_node) > 0) {
+      
+      aka_names <- filtered_persons() %>%
+        filter(person_id %in% clicked_node$person_id & is.na(familyname_postal)==F & is.na(givenname_postal)==F) %>%
+        # Combine postal names
+        transmute(names_alt = paste(familyname_postal, givenname_postal)) %>%
+        # Bind with existing names_alt column
+        select(names_alt) %>%
+        rbind(
+          filtered_persons() %>%
+            filter(person_id %in% clicked_node$person_id & is.na(names_alt) == F) %>%
+            select(names_alt)
+        ) %>%
+        drop_na() %>%
+        unique()
       
       # --- Native place
       native_loc <- CERD_locations %>%
@@ -2209,7 +2207,7 @@ server <- function(input, output, session) {
         
       )
     } else {
-      h4("Click on an entry for additional information.")
+      h4("Click on an entry for further information.")
     }
     
   })
