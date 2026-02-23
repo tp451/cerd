@@ -883,7 +883,9 @@ tabPanel("Publications",
 fluidRow(
   column(12, div(class = "dynamic-height scrollable-content",
   wellPanel(tags$small(HTML(paste0(
-    "<p><h4>Publications</h4></p>
+    
+    "
+    <p><h4>Publications</h4></p>
                                          <p>
                                          <a href=\"https://doi.org/10.48796/20260210-000\" target=\"_blank\"><img height=200px src=\"pub_taiwan.jpg\" alt=\"Publication cover\"></a>
                                          <a href=\"https://doi.org/10.1080/18752160.2025.2546742\" target=\"_blank\"><img height=200px src=\"pub_societies.jpg\" alt=\"Publication cover\"></a>
@@ -896,6 +898,7 @@ fluidRow(
                                          <p><b>Discussing the database</b>
                                          <ul>
                                          <li>Pelzer, Thorben. \"Introduction of Taiwan-based Engineers to the Chinese Engineers Relational Database (CERD-Taiwan).\" AREA Ruhr Working Paper No. 5, 2026.</li>
+                                         <li>\"[...] a groundbreaking example of applying modern social sciences methodologies to Chinese history.\" —Ben Kletzer, <i>Journal of Chinese History</i>, 2025.</li>
                                          <li>Ren, Bamboo Yunzhu. <i>Professional Education and Employment in China: Health and Engineering, 1905–1952</i>. Diss. Hong Kong University of Science and Technology (Hong Kong), 2025.</li>
                                          <li>Pelzer, Thorben. <i>Chinese Engineers Relational Database (CERD) Design Manual</i>. Leipziger Universitätsverlag, 2020.</li>
                                          </ul></p>
@@ -1932,26 +1935,24 @@ server <- function(input, output, session) {
     
     # get clicked person row safely
     clicked_node <- table_data[input$dataTablePerson_rows_selected, ]
-    
-    if (nrow(clicked_node) == 0) return(NULL)
-    
-    aka_names <- filtered_persons() %>%
-    filter(person_id %in% clicked_node$person_id & is.na(familyname_postal)==F & is.na(givenname_postal)==F) %>%
-    # Combine postal names
-    transmute(names_alt = paste(familyname_postal, givenname_postal)) %>%
-    # Bind with existing names_alt column
-    select(names_alt) %>%
-    rbind(
-      filtered_persons() %>%
-      filter(person_id %in% clicked_node$person_id & is.na(names_alt) == F) %>%
-      select(names_alt)
-    ) %>%
-    drop_na() %>%
-    unique()
-    
-    # Degrees for clicked person
+
+    # Profile for clicked person
     
     if (!is.null(clicked_node) && nrow(clicked_node) > 0) {
+      
+      aka_names <- filtered_persons() %>%
+        filter(person_id %in% clicked_node$person_id & is.na(familyname_postal)==F & is.na(givenname_postal)==F) %>%
+        # Combine postal names
+        transmute(names_alt = paste(familyname_postal, givenname_postal)) %>%
+        # Bind with existing names_alt column
+        select(names_alt) %>%
+        rbind(
+          filtered_persons() %>%
+            filter(person_id %in% clicked_node$person_id & is.na(names_alt) == F) %>%
+            select(names_alt)
+        ) %>%
+        drop_na() %>%
+        unique()
       
       # --- Native place
       native_loc <- CERD_locations %>%
@@ -2208,7 +2209,7 @@ server <- function(input, output, session) {
         
       )
     } else {
-      h4("Click on an entry for additional information.")
+      h4("Click on an entry for further information.")
     }
     
   })
