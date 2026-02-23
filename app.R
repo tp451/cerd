@@ -885,6 +885,7 @@ fluidRow(
   wellPanel(tags$small(HTML(paste0(
     "<p><h4>Publications</h4></p>
                                          <p>
+                                         <a href=\"https://doi.org/10.48796/20260210-000\" target=\"_blank\"><img height=200px src=\"pub_taiwan.jpg\" alt=\"Publication cover\"></a>
                                          <a href=\"https://doi.org/10.1080/18752160.2025.2546742\" target=\"_blank\"><img height=200px src=\"pub_societies.jpg\" alt=\"Publication cover\"></a>
                                          <a href=\"https://doi.org/10.1515/9783111374437-004\" target=\"_blank\"><img height=200px src=\"pub_flux.jpg\" alt=\"Publication cover\"></a>
                                          <a href=\"https://doi.org/10.1353/tcc.2025.a950426\" target=\"_blank\"><img height=200px src=\"pub_twentieth.jpg\" alt=\"Publication cover\"></a>
@@ -894,6 +895,7 @@ fluidRow(
                                          </p>
                                          <p><b>Discussing the database</b>
                                          <ul>
+                                         <li>Pelzer, Thorben. \"Introduction of Taiwan-based Engineers to the Chinese Engineers Relational Database (CERD-Taiwan).\" AREA Ruhr Working Paper No. 5, 2026.</li>
                                          <li>Ren, Bamboo Yunzhu. <i>Professional Education and Employment in China: Health and Engineering, 1905–1952</i>. Diss. Hong Kong University of Science and Technology (Hong Kong), 2025.</li>
                                          <li>Pelzer, Thorben. <i>Chinese Engineers Relational Database (CERD) Design Manual</i>. Leipziger Universitätsverlag, 2020.</li>
                                          </ul></p>
