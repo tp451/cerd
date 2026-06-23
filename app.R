@@ -904,7 +904,8 @@ fluidRow(
                                          </ul></p>
                                          <p><b>Using the database</b>
                                          <ul>
-                                         <li>Pelzer, Thorben. \"Engineering Societies in China: Spaces of Professionalization and Participation, 1912–1949.\" <i>East Asian Science, Technology and Society: An International Journal</i> (2025).</li>
+                                         <li>Chen, Qing. \"Industrial Lessons Abroad. Chinese Engineers in Britain, 1933–1948.\" <i>Journal of World History</i> 37.2 (2026): 251–287.</li>
+                                         <li>Pelzer, Thorben. \"Engineering Societies in China: Spaces of Professionalization and Participation, 1912–1949.\" <i>East Asian Science, Technology and Society: An International Journal</i> 20.1 (2026): 57–86.</li>
                                          <li>Pelzer, Thorben. \"Engineers on the Move: Elite Geographic Mobility in Republican China.\" <i>Twentieth-Century China</i> 50.1 (2025): 25–55.</li>
                                          <li>Pelzer, Thorben. \"Technocracy and Technostructure in Nationalist China.\" <i>Modern China in Flux: Networks, Mobility, and Transformation</i> (2025): 99–134.</li>
                                          <li>Pelzer, Thorben. <i>Engineering Trouble: US–Chinese Experiences of Professional Discontent, 1905–1945</i>. China Studies Vol. 52. Brill, 2023.</li>
@@ -913,6 +914,7 @@ fluidRow(
                                          </p>
                                          <p><b>Raw data download</b></p>
                                          <p>The raw data is available in a repository under doi <a href=\"http://doi.org/10.5281/zenodo.4075601\" target=\"_blank\">10.5281/zenodo.4075601</a>.</p>
+                                         <p>The code for this interface is available on <a href=\"https://github.com/tp451/cerd\" target=\"_blank\">GitHub</a>.</p>
                                          <p><b>Legacy interface</b></p>
                                          <p>The legacy online interface, refered to in earlier publications, remains available <a href=\"https://home.uni-leipzig.de/cerd/index.php\" target=\"_blank\">here</a>. The data is no longer up to date.</p> 
                                          "
