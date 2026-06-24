@@ -67,68 +67,12 @@ known_fields <- c("civil", "mechanical", "electrical", "mining", "chemical", "te
 # Data Loading
 # ------------------------------------------------------------------------------
 
-world_1938 <- read_sf("CERD/world_1938.geojson")
-china_1928 <- read_sf("china_tw_combined.geojson")
-taiwan_1946 <- read_sf("taiwan_1946.geojson")
-
-# Persons
-CERD_persons <- read_csv("CERD/pelzer_cerd_180_persons_bio.csv", show_col_types = F) %>%
-left_join(read_csv("CERD/pelzer_cerd_180_persons_societies.csv", show_col_types = F), by="person_id", relationship="many-to-many") %>%
-left_join(read_csv("CERD/pelzer_cerd_180_persons_ids.csv", show_col_types = F), by="person_id", relationship="many-to-many") %>%
-left_join(read_csv("CERD/pelzer_cerd_180_persons_names.csv", show_col_types = F), by="person_id", relationship="many-to-many") %>%
-unique()
-CERD_locations <-read_sf("CERD/pelzer_cerd_180_locations.geojson") %>%
-rename(longlat=geometry)
-CERD_degrees <-read_csv("CERD/pelzer_cerd_180_degrees.csv", show_col_types = F)
-CERD_colleges <-read_csv("CERD/pelzer_cerd_180_colleges.csv", show_col_types = F)
-CERD_jobs <-read_csv("CERD/pelzer_cerd_180_jobs.csv", show_col_types = F)
-CERD_employers <-read_csv("CERD/pelzer_cerd_180_employers.csv", show_col_types = F)
-CERD_sources <-read_csv("CERD/pelzer_cerd_180_persons_sources.csv", show_col_types = F)
-
-# CERD-Taiwan
-CERD_TW_persons <- read_csv("CERD_Taiwan/CERD_TW_persons_bio.csv", show_col_types = F) %>%
-left_join(read_csv("CERD_Taiwan/CERD_TW_persons_societies.csv", show_col_types = F), by="person_id", relationship="many-to-many") %>%
-left_join(read_csv("CERD_Taiwan/CERD_TW_persons_ids.csv", show_col_types = F), by="person_id", relationship="many-to-many") %>%
-left_join(read_csv("CERD_Taiwan/CERD_TW_persons_names.csv", show_col_types = F), by="person_id", relationship="many-to-many") %>%
-unique()
-CERD_TW_locations <-read_sf("CERD_Taiwan/CERD_TW_locations.geojson") %>%
-rename(longlat=geometry)
-CERD_TW_degrees <-read_csv("CERD_Taiwan/CERD_TW_degrees.csv", show_col_types = F)
-CERD_TW_jobs <-read_csv("CERD_Taiwan/CERD_TW_jobs.csv", show_col_types = F)
-CERD_TW_employers <-read_csv("CERD_Taiwan/CERD_TW_employers.csv", show_col_types = F)
-
-CERD_TW_sources <-read_csv("CERD_Taiwan/CERD_TW_persons_sources.csv", show_col_types = F)
-
-CERD_persons <- CERD_persons %>%
-rbind(CERD_TW_persons) %>%
-unique()
-
-CERD_sources <- CERD_sources %>%
-rbind(CERD_TW_sources) %>%
-unique()
-
-CERD_locations <- CERD_locations %>%
-rbind(CERD_TW_locations) %>%
-unique()
-
-CERD_degrees <- CERD_degrees %>%
-rbind(CERD_TW_degrees) %>%
-unique()
-
-CERD_jobs <- CERD_jobs %>%
-rbind(CERD_TW_jobs) %>%
-unique()
-
-CERD_employers <- CERD_employers %>%
-rbind(CERD_TW_employers) %>%
-unique()
-
-rm(CERD_TW_persons)
-rm(CERD_TW_sources)
-rm(CERD_TW_employers)
-rm(CERD_TW_jobs)
-rm(CERD_TW_degrees)
-rm(CERD_TW_locations)
+# Load the pre-built binary bundle instead of parsing the CSV / GeoJSON files
+# and re-running the joins on every start-up. This restores the objects
+# world_1938, china_1928, taiwan_1946, CERD_persons, CERD_locations,
+# CERD_degrees, CERD_colleges, CERD_jobs, CERD_employers and CERD_sources.
+# Regenerate the bundle with binarize.R whenever the source files change.
+list2env(readRDS("cerd_data.rds"), envir = environment())
 
 # ==============================================================================
 # UI DEFINITION
