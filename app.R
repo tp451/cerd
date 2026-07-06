@@ -850,6 +850,7 @@ fluidRow(
                                          <ul>
                                          <li>Chen, Qing. \"Industrial Lessons Abroad. Chinese Engineers in Britain, 1933–1948.\" <i>Journal of World History</i> 37.2 (2026): 251–287.</li>
                                          <li>Pelzer, Thorben. \"Engineering Societies in China: Spaces of Professionalization and Participation, 1912–1949.\" <i>East Asian Science, Technology and Society: An International Journal</i> 20.1 (2026): 57–86.</li>
+                                         <li>Jami, Catherine. \"'An Old China Hand Who Loved the Chinese People': Herbert Chatley (1885–1955), Civil Engineer and Historian of Chinese Science and Technology.\" <i>Annali di Ca' Foscari. Serie orientale</i> 61.2 (2025): 13–44.</li>
                                          <li>Pelzer, Thorben. \"Engineers on the Move: Elite Geographic Mobility in Republican China.\" <i>Twentieth-Century China</i> 50.1 (2025): 25–55.</li>
                                          <li>Pelzer, Thorben. \"Technocracy and Technostructure in Nationalist China.\" <i>Modern China in Flux: Networks, Mobility, and Transformation</i> (2025): 99–134.</li>
                                          <li>Pelzer, Thorben. <i>Engineering Trouble: US–Chinese Experiences of Professional Discontent, 1905–1945</i>. China Studies Vol. 52. Brill, 2023.</li>
@@ -993,7 +994,11 @@ fluidRow(
                                   <ul><li><a href=\"https://pelzer.blog\" target=\"_blank\">Thorben Pelzer</a> (Hong Kong University of Science and Technology)</li></ul></p>
                                  
                                   <p><b>Research funding</b>
-                                  <ul><li>“Chinese Engineers and their Spatial Imaginations”</br>
+                                  <ul>
+                                  <li>“China (Un)Plugged: Digital Explorations of the Northwest, 1937–1957”</br>
+                                  Grant ECS 26605326 awarded by the RGC (2027–2029)</br>
+                                  Principal investigator:	Thorben Pelzer</li>
+                                  <li>“Chinese Engineers and their Spatial Imaginations”</br>
                                   Grant SFB-1199-A6 awarded by DFG (2020–2024)</br>
                                   Principal investigator:	<a href=\"https://www.uni-leipzig.de/personenprofil/mitarbeiter/prof-dr-elisabeth-kaske\" target=\"_blank\">Elisabeth Kaske</a></br>
                                   Postdoctoral researcher: Thorben Pelzer</li>
